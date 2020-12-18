@@ -41,5 +41,18 @@ namespace BakeryOrder.Tests
             List<Order> testResult = Order.GetAll();
             CollectionAssert.AreEqual(testOrder, testResult);
         }
+
+        [TestMethod]
+        public void GetAll_ReturnsOrder_OrderList()
+        {
+            string title = "Leaping Frog cafe";
+            string description = "20 croissant";
+            int price = 30;
+            string date = "20th December";
+            Order testOrder = new Order(title, description, price, date);
+            List<Order> testList = new List<Order> {testOrder};
+            List<Order> result = Order.GetAll();
+            CollectionAssert.AreEqual(testList, result);
+        }
     }   
 }
