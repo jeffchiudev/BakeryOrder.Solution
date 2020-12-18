@@ -75,7 +75,7 @@ namespace BakeryOrder.Tests
             int price = 30;
             string date = "20th December";
             Order testOrder = new Order(title, description, price, date);
-            Order result = new Order("blah", "blah2", 3, "blah3"); //Order.Find(1);
+            Order result = Order.Find(1);
             Assert.AreEqual(testOrder, result);
         }
     }   
