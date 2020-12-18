@@ -14,5 +14,15 @@ namespace BakeryOrder.Tests
             Vendor testVendor = new Vendor("test");
             Assert.AreEqual(typeof(Vendor), testVendor.GetType());
         }
+
+        [TestMethod]
+        public void GetId_ReturnsVendorId_Int()
+        {
+            string vendorName = "Heart Coffee";
+            Vendor testVendor = new Vendor(vendorName);
+            int result = testVendor.Id;
+            Assert.AreEqual(1, result);
+            
+        }
     }
 }

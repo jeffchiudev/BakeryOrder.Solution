@@ -61,7 +61,7 @@ Pierre's has been declared pastry royalty in the PNW and now that orders are com
 |should correctly return a order if searched for | Order testOrder = new Order(etc....) | Order.Find(1) = testOrder |
 | Vendor |||
 | should correctly instantiate Vendor class | Vendor newVendor = new Vendor() | getType = Vendor |
-||||
+| should correctly retrieve a Vendor Id | Vendor testVendor = newVendor() | testVendor.Id = 1 |
 ||||
 ||||
 ||||
