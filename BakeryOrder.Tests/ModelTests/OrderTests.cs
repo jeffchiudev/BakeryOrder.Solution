@@ -26,8 +26,15 @@ namespace BakeryOrder.Tests
             Assert.AreEqual(title, testOrder.Title);
             Assert.AreEqual(description, testOrder.Description);
             Assert.AreEqual(price, testOrder.Price);
-            Assert.AreEqual(date, testOrder.Date);
-            
+            Assert.AreEqual(date, testOrder.Date);   
+        }
+
+        [TestMethod]
+        public void GetAll_ReturnsEmptyOrder_OrderList()
+        {
+            List<Order> testOrder = new List<Order> { };
+            List<Order> testResult = Order.GetAll();
+            CollectionAssert.AreEqual(testOrder, testResult);
         }
     }   
 }
