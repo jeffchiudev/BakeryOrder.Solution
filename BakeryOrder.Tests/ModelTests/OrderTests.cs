@@ -54,5 +54,17 @@ namespace BakeryOrder.Tests
             List<Order> result = Order.GetAll();
             CollectionAssert.AreEqual(testList, result);
         }
+
+        [TestMethod]
+        public void GetId_OrdersComeWithId_int()
+        {
+             string title = "Leaping Frog cafe";
+            string description = "20 croissant";
+            int price = 30;
+            string date = "20th December";
+            Order testOrder = new Order(title, description, price, date);
+            int result = 0;
+            Assert.AreEqual(1, result);
+        }
     }   
 }
