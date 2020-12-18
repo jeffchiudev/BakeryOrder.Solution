@@ -45,7 +45,7 @@ namespace BakeryOrder.Tests
         [TestMethod]
         public void GetAll_ReturnsOrder_OrderList()
         {
-            string title = "Leaping Frog cafe";
+            string title = "Leaping Frog cafe wednesday order";
             string description = "20 croissant";
             int price = 30;
             string date = "20th December";
@@ -58,7 +58,7 @@ namespace BakeryOrder.Tests
         [TestMethod]
         public void GetId_OrdersComeWithId_int()
         {
-            string title = "Leaping Frog cafe";
+            string title = "Leaping Frog cafe wednesday order";
             string description = "20 croissant";
             int price = 30;
             string date = "20th December";
@@ -70,7 +70,7 @@ namespace BakeryOrder.Tests
         [TestMethod]
         public void Find_FindOrderViaId_Order()
         {
-            string title = "Leaping Frog cafe";
+            string title = "Leaping Frog cafe wednesday order";
             string description = "20 croissant";
             int price = 30;
             string date = "20th December";
