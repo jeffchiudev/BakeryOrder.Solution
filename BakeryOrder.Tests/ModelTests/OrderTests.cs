@@ -6,8 +6,13 @@ using BakeryOrder.Models;
 namespace BakeryOrder.Tests
 {
     [TestClass]
-    public class OrderTests
+    public class OrderTests : IDisposable
     {
+        public void Dispose()
+        {
+            Order.ClearAll();
+        }
+        
         [TestMethod]
         public void OrderConstructor_CreatesOrderInstance_Order()
         {
