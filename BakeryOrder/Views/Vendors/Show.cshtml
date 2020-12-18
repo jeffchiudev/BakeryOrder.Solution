@@ -6,10 +6,10 @@
 
 <h3>Orders for <strong></strong>@Model["vendor"].VendorName</strong></h3>
 
-<ol></ol>
+<ol>
 @foreach (Order order in @Model["orders"])
 {
-    <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'></a>@order.Title</a></li>
+    <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Title</a></li>
 }
 </ol>
 
