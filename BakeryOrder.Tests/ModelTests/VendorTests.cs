@@ -6,8 +6,14 @@ using BakeryOrder.Models;
 namespace BakeryOrder.Tests
 {
     [TestClass]
-    public class BakeryTests
+    public class BakeryTests : IDisposable
     {
+
+        public void Dispose()
+        {
+            Vendor.ClearAll();
+        }
+
         [TestMethod]
         public void VendorConstructor_CreatesVendor_Vendor()
         {
