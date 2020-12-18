@@ -26,5 +26,10 @@ namespace BakeryOrder.Models
         {
             return _instances;
         }
+
+        public static Vendor Find(int searchId)
+        {
+
+        }
     }
 }
