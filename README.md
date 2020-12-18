@@ -52,7 +52,7 @@ Pierre's has been declared pastry royalty in the PNW and now that orders are com
 | :---------- | :---- | :---- |
 | Order |||
 | should correctly instantiate instance of an Order | Order newOrder = new Order() | getType = Order |
-||||
+| should correctly return details of an order | Order newOrder = new Order(string title, string description, int price, string date) | newOrder(title, description, price, date) |
 ||||
 
 </p>
