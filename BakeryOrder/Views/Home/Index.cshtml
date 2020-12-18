@@ -1,17 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>TODO Title</title>
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
-</head>
-<body>
-    <h1>Fill in these prompts to complete your very own Mad Lib!</h1>
-    <form action="/output" method="post">
-        <label for="country">Name a country</label>
-        <input id="country" name="country" type="text">
-        <label for="adjective1">Enter an adjective</label>
-        <input id="adjective1" name="adjective1" type="text"> 
-        <button type="submit">Mad Libs Go!</button>
-    </form>
-</body>
-</html>
+@{
+  Layout = "_Layout";
+}
+
+<h1>Welcome back Pierre!</h1>
+<h2>Would you like to view your vendor or add a new Vendor?</h2>
+<h3><a href="/vendors">View Vendors</a></h3>
+<h3><a href="/vendors/new">Add a new Vendor</a></h3>
