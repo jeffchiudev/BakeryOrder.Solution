@@ -30,5 +30,15 @@ namespace BakeryOrder.Tests
             Assert.AreEqual(1, result);
             
         }
+
+        [TestMethod]
+        public void GetAll_ReturnsVendorObjects_VendorList()
+        {
+            string vendorName = "Heart Coffee";
+            Vendor testVendor = new Vendor(vendorName);
+            List<Vendor> venList = new List<Vendor>{testVendor};
+            List<Vendor> result = Vendor.GetAll();
+            CollectionAssert.AreEqual(venList, result);
+        }
     }
 }

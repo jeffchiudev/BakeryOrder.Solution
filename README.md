@@ -54,7 +54,7 @@ Pierre's has been declared pastry royalty in the PNW and now that orders are com
 | should correctly instantiate instance of an Order | Order newOrder = new Order() | getType = Order |
 | should correctly return details of an order | Order newOrder = new Order(string title, string description, int price, string date) | newOrder(title, description, price, date) |
 | Order.GetAll() |||
-| should correctly return an empty order list | List<Order> testOrder = Order.GetAll() | testOrder.Count = 0 |
+| should correctly return an empty order list | List<Order> testList = Order.GetAll() | testList.Count = 0 |
 | should correctly return an order list | Order testOrder = new Order(title,description,price,date) | List<Order> testList = new List<Order> {testOrder} |
 | should correctly return a Order list with an ID number | Order testOrder = ne Order(etc..) | testOrder.Id = 1 |
 | Order.Find(int searchId) |||
@@ -62,8 +62,8 @@ Pierre's has been declared pastry royalty in the PNW and now that orders are com
 | Vendor |||
 | should correctly instantiate Vendor class | Vendor newVendor = new Vendor() | getType = Vendor |
 | should correctly retrieve a Vendor Id | Vendor testVendor = newVendor() | testVendor.Id = 1 |
-||||
-||||
+| Vendor.GetAll() |||
+| should correctly return a vendor object | List<Vendor> venList = new List<Vendor> { testVendor } | Vendor.GetAll = venList; |
 ||||
 ||||
 
