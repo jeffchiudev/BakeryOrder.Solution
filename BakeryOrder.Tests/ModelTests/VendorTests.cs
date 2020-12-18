@@ -49,5 +49,21 @@ namespace BakeryOrder.Tests
             Vendor result = Vendor.Find(1);
             Assert.AreEqual(testVendor, result);
         }
+
+        [TestMethod]
+        public void AddOrder_AddsOrdersToVendor_OrderList()
+        {
+            string title = "Heart Coffee 10 croissant";
+            string description = "10 croissant";
+            int price = 30;
+            string date = "20th December";
+            Order testOrder = new Order(title, description, price, date);
+            List<Order> newOrderList = new List<Order> { testOrder };
+            string vendorName = "Heart Coffee";
+            Vendor testVendor = new Vendor(vendorName);
+            testVendor.AddOrder(testOrder);
+            List<Order> result = testVendor.Orders;
+            CollectionAssert.AreEqual(newOrderList, result);
+        }
     }
 }

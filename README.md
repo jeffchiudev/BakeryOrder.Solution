@@ -66,6 +66,11 @@ Pierre's has been declared pastry royalty in the PNW and now that orders are com
 | should correctly return a vendor object | List<Vendor> venList = new List<Vendor> { testVendor } | Vendor.GetAll = venList; |
 | Vendor.Find(int searchId) |||
 | should correctly return an Vendor by Id | Vendor testVendor = new VEndor(etc...) | Vendor.Find(1) = testVendor |
+| Vendor.AddOrder(Order order) |||
+| should correctly associate and order with a vendor | newVendor.AddOrder(testOrder) | List<testOrderList> = newVendor(testOrder) |
+||||
+||||
+||||
 
 </p>
 </details>
