@@ -1,4 +1,4 @@
-# _TODOProjectName_
+# _Pierre's Bakery Order Tracking_
 
 <div align="center">
 <img src="https://github.com/jeffchiudev.png" width="200px" height="auto" style="border-radius: 15px 50px;">
@@ -6,15 +6,15 @@
 <p align="center">Authored by Jeff Chiu</p>
 <p align="center">Updated on: 11.dec.2020</p>
 
-#### TODOBriefDescriptionofApp, v1.0, TODO01.01.20xx
+#### When business is booming, orders need tracking, v1.0, 18.dec.2020
 
 ## Description:
 
-Detailed description of app.
+Pierre's has been declared pastry royalty in the PNW and now that orders are coming in from the many coffee shops that blanket the city, this app was comissioned to help Pierre's keep track of orders coming in. 
 
 ## Site link
 
-[Click here](https://github.com/jeffchiudev/TODOProject.Solution) to visit the site.
+[Click here](https://github.com/jeffchiudev/BakeryOrder.Solution) to visit the site.
 
 
 ## Setup/Installation Requirements:
@@ -31,13 +31,19 @@ Detailed description of app.
 
 1. Open terminal window and navigate to/create desired repository location.
 
-2. Clone this repository onto your computer by using command: `git clone https://github.com/jeffchiudev/TODOProject.Solution`
+2. Clone this repository onto your computer by using command: `git clone https://github.com/jeffchiudev/BakeryOrder.Solution`
 
 3. Navigate to cloned repository and open in Visual Studio Code with `code .`.
 
 4. In terminal, navigate to Bakery folder and run command `dotnet build` followed by `dotnet run` to see the working program.
 
 ## Testing Specifications:
+
+1. Clone repository and navigate to the BakeryOrder.Tests directory.
+
+2. Run commmands `dotnet restore` and `dotnet build` to download testing packages.
+
+3. Run commands `dotnet test` to run testing suite. 
 
 <details><summary>Click Here for Testing Specifications:</summary>
 <p>
