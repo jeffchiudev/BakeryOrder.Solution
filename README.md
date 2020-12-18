@@ -57,8 +57,8 @@ Pierre's has been declared pastry royalty in the PNW and now that orders are com
 | should correctly return an empty order list | List<Order> testOrder = Order.GetAll() | testOrder.Count = 0 |
 | should correctly return an order list | Order testOrder = new Order(title,description,price,date) | List<Order> testList = new List<Order> {testOrder} |
 | should correctly return a Order list with an ID number | Order testOrder = ne Order(etc..) | testOrder.Id = 1 |
-||||
-||||
+| Order.Find(int searchId) |||
+|should correctly return a order if searched for | Order testOrder = new Order(etc....) | Order.Find(1) = testOrder |
 ||||
 
 </p>
