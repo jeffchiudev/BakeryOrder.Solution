@@ -63,7 +63,7 @@ namespace BakeryOrder.Tests
             int price = 30;
             string date = "20th December";
             Order testOrder = new Order(title, description, price, date);
-            int result = 0;
+            int result = testOrder.Id;
             Assert.AreEqual(1, result);
         }
     }   
