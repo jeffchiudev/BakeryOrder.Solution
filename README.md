@@ -1,16 +1,17 @@
 # _Pierre's Bakery Order Tracking_
+### _When business is booming, orders need tracking, v1.0, 18.dec.2020_
 
+<br>
 <div align="center">
 <img src="https://github.com/jeffchiudev.png" width="200px" height="auto" style="border-radius: 15px 50px;">
 </div>
 <p align="center">Authored by Jeff Chiu</p>
-<p align="center">Updated on: 11.dec.2020</p>
+<p align="center">Updated on: 18.dec.2020</p>
 
-#### When business is booming, orders need tracking, v1.0, 18.dec.2020
 
 ## Description:
 
-Pierre's has been declared pastry royalty in the PNW and now that orders are coming in from the many coffee shops that blanket the city, this app was comissioned to help Pierre's keep track of orders coming in. 
+Pierre's bakery is a beloved institution in the Portland Metro area and as such there are many orders coming and going through the doors of the bakery that need to be detailed and tracked.  This app is designed to help Pierre, or any other interested large scale bakery that sells product to vendors to organize thieir orders. 
 
 ## Site link
 
@@ -68,9 +69,6 @@ Pierre's has been declared pastry royalty in the PNW and now that orders are com
 | should correctly return an Vendor by Id | Vendor testVendor = new VEndor(etc...) | Vendor.Find(1) = testVendor |
 | Vendor.AddOrder(Order order) |||
 | should correctly associate and order with a vendor | newVendor.AddOrder(testOrder) | List<testOrderList> = newVendor(testOrder) |
-||||
-||||
-||||
 
 </p>
 </details>
