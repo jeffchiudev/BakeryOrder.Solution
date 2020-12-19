@@ -2,9 +2,9 @@
     Layout = "_Layout";
 }
 
-<h1>Add a new order to @Model.Title</h1>
+<h1>Add a new order to @Model.VendorName</h1>
 
-<form action="/vendors/@Model.Id/orders" method="post"></form>
+<form action="/vendors/@Model.Id/orders" method="post">
     <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
     <label for="orderTitle">Order Title</label>
     <input id="orderTitle" name="orderTitle" type="text">
@@ -14,5 +14,5 @@
     <input id="orderCost" name="orderCost" type="int">
     <label for="orderDate">Order Date</label>
     <input id="orderDate" name="orderDate" type="text">
-    <button type="submit" class="btn btn-primary">Add Order</button>
+    <button type="submit">Add Order</button>
 </form>

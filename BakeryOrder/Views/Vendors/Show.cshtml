@@ -4,13 +4,13 @@
 
 @using BakeryOrder.Models;
 
-<h3>Orders for <strong></strong>@Model["vendor"].VendorName</strong></h3>
+<h3>Orders for <strong>@Model["vendor"].VendorName</strong></h3>
 
 <ol>
-@foreach (Order order in @Model["orders"])
-{
-    <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Title</a></li>
-}
+    @foreach (Order order in @Model["orders"])
+    {
+        <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Title</a></li>
+    }
 </ol>
 
 <p><a href='/vendors/@Model["vendor"].Id/orders/new'>Add a new order</a></p>
