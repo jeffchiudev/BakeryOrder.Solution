@@ -1,0 +1,12 @@
+body {
+    background-image: url(../img/bread1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center right;
+    color: rgb(23, 131, 255)
+}
+
+.container {
+    padding-top: 100px;
+    padding-left: 100px;
+}
